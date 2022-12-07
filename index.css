@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-group{ 
+    margin: 20px 0; 
+
+}
+
+nav{
+    text-align: center;
+    padding: 10px;
+}
+
+input{ 
+    height: 30px; 
+    max-width: 100%; 
+    padding: 5px; 
+}
+button{ 
+    background: dodgerblue; 
+    color: #fff; 
+    padding: 10px; 
+    border: solid 1px dodgerblue;
+    cursor: pointer;
+   
+}
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: #f7f5ff;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+
+}
+th{
+    border: 1px solid black;
+    padding: 5px;
+
+}
+table{
+    border: none;
+    padding: 0px;
+    line-height: 4vh;
+    margin: 0px;
+    text-align: center;
+    margin-left: auto;
+margin-right: auto;
+
+    
+
+}
+tr{
+    color: blue;
+    border-bottom: black;
+    
+    
+    
+}
+td{
+    border: 1px solid black;
+    padding: 5px 5px;
+    text-align: center;
+    color: black;
+    font-size: small;
+
+    
+
+
+}
+
+
+
+main{
+    flex: 1;
+    margin: 20px 5px;
+    text-align: center;
+
+}
+.myInfo{
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+}
