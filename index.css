@@ -8,7 +8,14 @@
     margin: 20px 0; 
 
 }
-
+.container{
+    border: 1px solid black;
+    max-width: 80vh;
+    margin:  auto;
+    background: #d9d2f4;
+    padding: 5px 10px;
+    
+}
 nav{
     text-align: center;
     padding: 10px;
@@ -18,14 +25,23 @@ input{
     height: 30px; 
     max-width: 100%; 
     padding: 5px; 
+    border-radius: 5px;
+    border: 1px solid dodgerblue;
+
 }
 button{ 
-    background: dodgerblue; 
+    background: rgb(33, 85, 136); 
+    border-radius: 10px;
     color: #fff; 
     padding: 10px; 
     border: solid 1px dodgerblue;
     cursor: pointer;
    
+}
+button:hover{
+    background: rgb(153, 189, 226); 
+
+
 }
 
 html{
