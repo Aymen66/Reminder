@@ -29,6 +29,19 @@ input{
     border: 1px solid dodgerblue;
 
 }
+input[type=text]:focus {
+	width: 70%;
+    background-color: rgb(17, 70, 105);
+}
+
+
+.item{
+   display: table;
+   list-style: none;
+   
+}
+
+
 button{ 
     background: rgb(33, 85, 136); 
     border-radius: 10px;
@@ -75,6 +88,8 @@ margin-right: auto;
 tr{
     color: blue;
     border-bottom: black;
+    display: flex;
+    flex-direction: row
     
     
     
@@ -83,14 +98,13 @@ td{
     border: 1px solid black;
     padding: 5px 5px;
     text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: small;
 
     
 
 
 }
-
 
 
 main{

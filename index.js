@@ -26,7 +26,7 @@ function dispData(){
     JSON.parse(localStorage.getItem("formData")).forEach(data =>{
       output.innerHTML += `
       <tr>
-      <td>${data.activity}</td>
+      <td class="item">${data.activity}</td>
       <td>${data.time}</td>
       <td>${data.date}</td>
       <td>${data.location}</td>
@@ -61,7 +61,7 @@ function search() {
   // and then i tried to retrieve the data from formData But it didnt work 
 	// let x = formData;  
   // I also tried to get the data from the table and also from the div folder '#output ' in the html that contains the table but it didnt 
-let x = document.getElementById("output")
+	let x = document.getElementsByClassName('item');
 	for (i = 0; i < x.length; i++) {
 		if (!x[i].innerHTML.toLowerCase().includes(input)) {
 			x[i].style.display="none";
@@ -70,4 +70,5 @@ let x = document.getElementById("output")
 			x[i].style.display="list-item";				
 		}
 	}
+  input=""
 }
