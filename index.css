@@ -10,45 +10,53 @@
 }
 .container{
     border: 1px solid black;
-    max-width: 80vh;
+    max-width: 40%;
+    min-height: 95vh;
     margin:  auto;
-    background: #d9d2f4;
+    background-image: url("image\ 2.png");
     padding: 5px 10px;
+    background-size: 80vw 100vh;
     
 }
-nav{
-    text-align: center;
-    padding: 10px;
-}
+
 
 input{ 
     height: 30px; 
-    max-width: 100%; 
+    width: 50%; 
     padding: 5px; 
     border-radius: 5px;
-    border: 1px solid dodgerblue;
+    text-align: center;
+    background: #212121;
+    border-radius: 8px;;
+    color: whitesmoke;
+    box-shadow: 0px 1px 1px rgb(255, 252, 252); 
+
 
 }
-input[type=text]:focus {
-	width: 70%;
-    background-color: rgb(17, 70, 105);
+input::placeholder{
+    color: whitesmoke;
+
 }
-
-
-.item{
-   display: table;
-   list-style: none;
-   
-}
-
-
+input::-webkit-calendar-picker-indicator{
+    filter: invert(100%);
+  }
+    #searchbar{
+        margin-top: 5px;
+        max-width: 30%;
+       margin-left: 10px;
+        
+    }
 button{ 
-    background: rgb(33, 85, 136); 
+    background: rgb(194,178,128);
+    box-shadow: 0px 5px 5px black; 
     border-radius: 10px;
-    color: #fff; 
+    font-style: normal;
+    font-weight: bolder;
+    color: aliceblue;
     padding: 10px; 
-    border: solid 1px dodgerblue;
+    border: none;
     cursor: pointer;
+    margin-top: 10px;
    
 }
 button:hover{
@@ -65,12 +73,17 @@ body{
     background: #f7f5ff;
     display: flex;
     flex-flow: column;
-    height: 100vh;
+    min-height: 100vh;
+
 
 }
+
 th{
     border: 1px solid black;
     padding: 5px;
+    width: 15vw;
+    background: rgb(194,178,128);
+
 
 }
 table{
@@ -80,40 +93,226 @@ table{
     margin: 0px;
     text-align: center;
     margin-left: auto;
-margin-right: auto;
+    margin-right: auto;
+    overflow: auto;
+    max-width: 100%;
 
     
 
 }
 tr{
-    color: blue;
+    color: rgb(0, 0, 0);
+    
     border-bottom: black;
-    display: flex;
-    flex-direction: row
     
-    
-    
+
 }
+
+
 td{
     border: 1px solid black;
     padding: 5px 5px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: whitesmoke;
+    text-shadow:  5px 5px 5px black;
+    background-color: #979494;
     font-size: small;
-
+    width: 10vw;
     
 
-
 }
+
+#activity-js{
+    width: 40vw;
+}
+.activity{
+    width: 30vw;
+}
+
 
 
 main{
     flex: 1;
     margin: 20px 5px;
     text-align: center;
+    color: white;
+    margin-top: 10%;
 
 }
 .myInfo{
     text-align: center;
     margin: 20px 10px 10px 10px;
 }
+
+ul
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+   
+    
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: cesnter;
+    padding: 14px 30px;
+    text-decoration: none;
+        
+  }
+ 
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background: rgb(148, 135, 96);
+    color: white;
+
+    
+  }
+  
+  .topnav .icon {
+    display: none;
+    
+  }
+  a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    font-family: 'Inder';
+    font-style: normal;
+    font-weight: bolder;
+   
+
+    margin: 10px auto;
+    padding: 10px 15px;
+    display: block;
+    color: aliceblue;
+    background: rgb(194,178,128);
+    box-shadow: 0px 5px 5px black; 
+    border-radius: 10px;
+    max-width: fit-content;
+    
+}
+
+a.button:active{
+opacity: 1;
+background-color: #80BF82;
+color: black;
+}
+@media screen and (max-width: 915px) {
+    .topnav a {
+        
+        padding: 14px 20px;
+        
+        
+      }
+
+}
+  @media screen and (max-width: 653px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    padding: 14px 5px 14px 0px;
+    
+
+
+    }
+   
+    #searchbar{
+        margin-right: 40px;
+        max-width: 40%;
+
+    }
+   
+
+    table{
+        display: block;
+        font-size: small;
+        width: 100%;
+        
+    }
+    
+    td{
+        width: 25vw;
+        font-size: 10px;
+        
+    }
+    #activity-js{
+        width: 40vw;
+    }
+    .activity{
+        width: 40vw;
+
+    }
+    .container{
+        max-width: 100%;
+        height: 40vh;
+        margin-top: 0%;
+        padding: 0%;
+        background-size: cover;
+
+    }
+    .container-grid{
+        max-width: 100%;
+        height: 40vh;
+        margin-top: 0%;
+        padding: 0%;
+        background-size: cover;
+
+    }
+   
+  }
+  
+  @media screen and (max-width:353px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      
+      
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+   
+      
+      
+    }
+  
+    
+  }
+/* 
+@media screen and (max-width:600px) {
+    .container-grid{
+        width: 95%;
+    }
+    table{
+        display: block;
+        font-size: small;
+        width: 100%;
+        
+    }
+    
+    td{
+        width: 15vw;
+        font-size: 10px;
+    }
+    #activity{
+        width: 40vw;
+    }
+    .activity{
+        width: 40vw;
+
+    }
+} */

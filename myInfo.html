@@ -23,29 +23,28 @@
         </ul>
     </nav>
     <main>
-        <h2>To do list</h2>
-        <form role="form" onsubmit="toDo(event);">
-            <div class="form-group">
-                <input type="text" name="activity" id="activity" placeholder="Activity" required>
-            </div>
-            <div class="form-group">
-                <input type="time" name="time" id="time" placeholder="Time" required>
-            </div>
-            <div class="form-group">
-                <input type="date" name="date" id="date" placeholder="Date" required>
-            </div>
-            <div class="form-group">
-                <input type="text" name="location" id="location" placeholder="location" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+        <h2 class="myInfo">My Info</h2>
+        <div  id="output">
+           <table>
+            <thead >
+                <tr>
+                    <th class="activity" >Activity </th>
+                    <th>Time</th>
+                    <th >Date</th>
+                    <th >Place</th>
+                </tr>
+            </thead>
+            <tbody >
+               
+            </tbody>
+           </table>
+        </div>
         <button onclick="deletebBtn()">Delete</button><br>
-
-
-        <a href="myInfo.html" class="button">My Info</a> 
+    
+    
+       </div>
        
+    
         
     </main>
     
