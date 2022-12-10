@@ -274,7 +274,7 @@ color: black;
         #date{
             background: url(date.jpg) no-repeat scroll 7px 7px;
             padding-left:10px;
-            background-size: 25px;
+            background-size: 35px;
             background-color: #212121;
             background-position: right;
             background-blend-mode:difference;
