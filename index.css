@@ -262,7 +262,26 @@ color: black;
 
 
     }
-  
+    #time{
+        background: url(time.jpg) no-repeat scroll 7px 7px;
+        padding-left:30px;
+        background-size: 30px;
+        background-color: #212121;
+        background-position: right;
+        background-blend-mode:difference;
+
+        }
+        #date{
+            background: url(date.jpg) no-repeat scroll 7px 7px;
+            padding-left:10px;
+            background-size: 25px;
+            background-color: #212121;
+            background-position: right;
+            background-blend-mode:difference;
+    
+            }
+
+      
    
   }
   
