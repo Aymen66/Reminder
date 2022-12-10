@@ -144,7 +144,7 @@ main{
     margin: 20px 10px 10px 10px;
 }
 
-ul
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -157,10 +157,10 @@ ul
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: cesnter;
+    text-align: center;
     padding: 14px 30px;
     text-decoration: none;
-        
+    font-size: 17px;
   }
  
   
@@ -221,7 +221,7 @@ color: black;
     .topnav a.icon {
       float: right;
       display: block;
-    padding: 14px 5px 14px 0px;
+    padding: 14px 5px 14px 20px;
     
 
 
@@ -266,7 +266,7 @@ color: black;
    
   }
   
-  @media screen and (max-width:353px) {
+  @media screen and (max-width:600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
