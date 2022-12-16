@@ -1,54 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
+  <meta propperty="og: title" content="Use my new app !">
+  <meta propperty="og: type" content="App">
+  <meta propperty="og: image" content="logo.jpg">
+  <meta propperty="og: description" content=" Vocabulary Checker is the right app for you to make  all your activities memorable. Use it now! ">
+  <meta propperty="og: name" content="To-do list">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-do list</title>
 </head>
 <body>
-   <div class="container">
-    <nav  class="topnav" id="myTopnav">
-        <ul>
-            <a href="index.html" class="active">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-              <input id="searchbar" oninput="search()" type="search"
-              name="search" placeholder="Search ..">
-        </ul>
-    </nav>
-    <main>
-        <h2>To do list</h2>
-        <form role="form" onsubmit="toDo(event);">
-            <div class="form-group">
-                <input type="text" name="activity" id="activity" placeholder="Activity"  required>
-            </div>
-            <div class="form-group">
-                <input type="time" name="time"value="--:--" id="time" placeholder="Time" required>
-            </div>
-            <div class="form-group">
-                <input type="date" name="date" id="date"value="dd / mm / yyyy" placeholder="Date" required>
-            </div>
-            <div class="form-group">
-                <input type="text" name="location" id="location" placeholder="location" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-        <button onclick="deletebBtn()">Delete</button><br>
-
-
-        <a href="myInfo.html" class="button">My Info</a> 
-       
-        
-    </main>
     
-    <script type="text/javascript" src="index.js"></script>
-</body>
+    
+      <div class="container">
+        <header>
+          <img id="logo" src="logo.jpg">
+      
+          <nav class="topnav" id="myTopnav">
+            <ul class="tabs">
+              <a data-tab-target="#homeEl" class="active tab">Home</a>
+              <a data-tab-target="#aboutEl" class="tab">About </a>
+              <a data-tab-target="#contactEl" class="tab">Contact </a>
+              <a data-tab-target="#myListEl" class="tab">My List </a>
+
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+            </ul>
+          </nav>
+        
+        </header>
+           
+            <main>
+               
+                
+                  <div class="tab-content">
+                    <div id="homeEl" data-tab-content class="active">
+                      <div class="home">
+                        <h1>To-do list</h1>
+                        <form role="form" onsubmit="toDo(event);">
+                            <div class="form-group">
+                                <input class="form-inputs"  type="text" name="activity" id="activity" placeholder="Activity"  required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-inputs" type="time" name="time"value="--:--" id="time" placeholder="Time" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-inputs" type="date" name="date" id="date"value="dd / mm / yyyy" placeholder="Date" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-inputs" type="text" name="location" id="location" placeholder="location" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                
+                        <!-- <a href="myInfo.html" class="button">My Info</a>  -->
+                       
+                          
+                      </div>
+                    </div>
+                    <div id="aboutEl" data-tab-content>
+                      <div class="about">
+                        <section>
+                          <article>
+                            <h3>Aymen Alkhawlani</h3>
+                            <p>I'm studying Front-End Web Development. I have a strong passion for programming languages. I'm a fast learner and always eager to learn!</p>
+                            <img src="profile.jpg" alt=" my profile "><br>
+                          </article>
+                          <article>
+                            <button class="btn-form" type="button"><a href="data-tab-target='#aboutEl' class='tab'">Contact</a> </button>
+                  
+                          </article>
+                        </section>
+                        
+                      </div>
+
+                    </div>
+                    <div id="contactEl" data-tab-content>
+                      <div class="about">
+                        <section>
+                          <article>
+                            <p> Please contact me if you have any problems or suggestions to improve the app:</p>
+                              <address>
+                               
+                            <a href="tel:07956645957"> <img src="cell-phone-icon.jpg" class="icon"></a>
+                            <a href="mailto:alkhawlaniamen.gmail.com"><img class="icon"
+                                src="gmail.png"></a>
+                            <a href="https://goo.gl/maps/4utZFiTRn1RaTB9a8"> <img class="icon"
+                            src="location.png"></a>
+                            <a href="https://www.facebook.com/loy20201"> <img class="icon"
+                              src="facebook.png"></a>					
+                              <a href="#"> <img src="link-icon.png" class="icon"></a>
+                              <a href="https://wa.me/447956645957"> <img src="whatsapp.jpg" class="icon"></a>
+                               
+                             
+                              </address>
+                          </article>
+                        </section>
+                        <form action="https://formsubmit.co/8752a28c32d6c5be422399626f769b02" method="POST">
+                          <input class="contact-message" type="text" placeholder="Name" name="name" required><br>
+                          <input class="contact-message" type="email"  name="email"  placeholder="Email Address" required><br>
+                          
+                          <input class="contact-message" type="hidden" name="_captcha" value="false">
+                          <textarea  type="text" name="message" placeholder="Write your message here" required></textarea><br>
+                          <button class="btn-form" type="submit">Send</button>
+                          <button class="btn-form" type="reset">Reset</button>
+                      
+                      </form>
+                      </div>
+                      
+                      </div>
+                      <div id="myListEl" data-tab-content>
+                      <div class="about">
+                          <h3 class="myInfo">My List</h3>
+                          <input  id="searchbar" oninput="search()" type="search"
+                          name="search" placeholder="Search ..">
+                          <div  id="output">
+                             <table>
+                              <thead >
+                                  <tr>
+                                      <th class="activity" >Activity </th>
+                                      <th>Time</th>
+                                      <th >Date</th>
+                                      <th >Place</th>
+                                  </tr>
+                              </thead>
+                              <tbody >
+                                 
+                              </tbody>
+                             </table>
+                          </div>
+                          <button class="btn-form" onclick="deletebBtn()">Delete</button><br>
+                      
+                      
+                         </div>
+                         
+                      
+                          
+                      
+                      </div>
+                      
+                    
+            </main>
+            <footer>
+              
+              <p>
+                <code>Copyright (c) 2022 Vocabulary Checker</code>
+              </p>
+        
+          </footer>
+          
+          
+          
+        
+        
+        </div> 
+
+  <script src="index.js"></script>
+
+  </body>
 </html>
+

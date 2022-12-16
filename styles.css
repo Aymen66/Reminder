@@ -1,0 +1,565 @@
+[data-tab-content] {
+    display: none;
+    border-radius: 10px; 
+    padding: 10px;
+    max-width: 95%; 
+    min-height: 30vh;
+
+    
+}
+
+
+
+  
+  .active[data-tab-content] {
+    display: block;
+    
+    
+  }
+  
+ 
+  
+  .tabs {
+    /* display: flex; */
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    color: black;
+    background-color: #ffb662;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #333;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding :5px 10px;
+    box-shadow: 0px 3px 1px black;
+
+  }
+  
+  /* .tab {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+  } */
+  
+
+  /* .tab:active {
+    background-color: #AAA;
+    
+  }
+  
+  .tab-content {
+    margin-left: 0px;
+    margin-right: 0px;
+    
+  }
+   */ 
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+background-color: black;
+
+}
+.form-group{ 
+    margin: 20px 0; 
+
+}
+.container{
+    border: 1px solid black;
+    max-width: 30%;
+    min-height: 98vh;
+    margin:  auto;
+    background-image: url("image\ 2.png");
+    padding: 5px 5px;
+    background-size: 80vw 100vh;
+    
+}
+
+
+.form-inputs{ 
+    height: 20px; 
+    width: 50%; 
+    padding: 5px; 
+    border-radius: 5px;
+    text-align: center;
+    background: #212121;
+    border-radius: 8px;;
+    color: whitesmoke;
+    box-shadow: 0px 1px 1px rgb(255, 252, 252); 
+
+
+}
+.form-inputs::placeholder{
+    color: whitesmoke;
+
+}
+.form-inputs::-webkit-calendar-picker-indicator{
+    filter: invert(100%);
+  }
+    #searchbar{
+        margin-top: 5px;
+        max-width: 30%;
+       margin-left: 10px;
+        
+    }
+button{ 
+    background: rgb(194,178,128);
+    box-shadow: 0px 5px 5px rgb(4, 4, 4); 
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bolder;
+    color: aliceblue;
+    padding: 10px; 
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px black;
+   
+}
+button:hover{
+    background: rgb(226, 232, 232);
+    color: #212121; 
+    border: 1px solid black;
+    
+
+}
+button:active{
+    background: rgb(226, 232, 232);
+    color: #212121; 
+    border: 1px solid black;
+
+
+}
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* body{
+    background: #f7f5ff;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+
+
+} */
+
+th{
+    border: 1px solid black;
+    padding: 5px;
+    width: 25%;
+    background: rgb(194,178,128);
+
+
+}
+table{
+    border: none;
+    padding: 0px;
+    line-height: 4vh;
+    margin: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    max-width: 100%;
+
+    
+
+}
+tr{
+    color: rgb(0, 0, 0);
+    
+    border-bottom: black;
+
+    
+
+    
+
+}
+
+
+td{
+    border: 1px solid black;
+    padding: 5px 5px;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow:  5px 5px 5px black;
+    background-color: #979494;
+    font-size: small;
+    width: 25%;
+    
+
+}
+
+#activity-js{
+    width: 40vw;
+}
+.activity{
+    width: 40vw;
+}
+
+
+
+main{
+    flex: 1;
+    margin: 20px 5px;
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+    
+
+}
+.myInfo{
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+}
+
+
+
+
+.topnav {
+    overflow: hidden;
+    /* background-color: #333; */
+    
+    
+  
+   
+    
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    
+  }
+ 
+  .topnav a:hover {
+    
+    cursor: pointer;
+
+  }
+  .topnav a:active {
+    background-color: #ddd;
+    max-width: fit-content;
+    color: black;
+    margin: 0px;
+    padding: 7px;
+    
+
+  }
+  
+  .topnav a.active {
+    color: white;
+
+
+    
+  }
+  
+  .topnav .icon {
+    display: none;
+
+    
+  }
+
+  /* about and contact pages */
+
+address a{
+    color: whitesmoke;
+}
+
+.icon {
+	max-width: 15px;
+	max-height: 15px;
+	padding: 1px 1px;
+	margin: 5px 2.5px;
+    aspect-ratio: 3/3;
+    
+}
+
+article p, h1{
+    color: white;
+    padding: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+	opacity: 0.7;
+}
+img{
+    max-width: 40%;
+    margin: 5% 0px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px rgb(250, 247, 247);
+
+}
+
+.about{
+    max-width: 80%;
+    min-height: auto;
+    background-color: rgb(45, 43, 43);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 5%;
+    background-image: url("vc.jpg");
+    background-size:cover;
+    background-position: center;
+    background-blend-mode:overlay;    
+}
+p{
+    line-height: 3vh;
+    font-size: small;
+
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 10%;
+    text-shadow: 5px 5px 5px black;
+}
+h3{
+    color: whitesmoke;
+    font-size: large;
+    line-height: 3vh;
+
+}
+
+.btn-form{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 900;
+    background: rgb(194,178,128);
+    color: whitesmoke;
+    box-shadow: 1px 2px 3px rgb(255, 253, 253);
+
+
+}
+.btn-form:hover{
+    background: rgb(226, 232, 232);
+    color: #212121; 
+    border: 1px solid black;
+
+
+}
+.btn-form:active{
+    color: #0c0c0c;
+    background-color: #fbfbfb;
+    border: 1px solid black;
+
+}
+.contact-message{
+    padding: 5px 10px;
+    margin: 10px  0px;
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    height: 10px; 
+    max-width: 40%;     
+    font-size: 10px;
+    color: #212121;
+    box-shadow: 0px 1px 1px rgb(250, 247, 247);
+    text-align: center;
+
+
+}
+ #searchbar{
+    padding: 5px 10px;
+    margin: 10px  0px;
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    height: 4vh; 
+    max-width: 70vw;     
+    font-size: 10px;
+    color: #212121;
+    box-shadow: 0px 1px 1px rgb(250, 247, 247);
+    text-align: center;
+
+
+}
+
+textarea{
+    height: 10vh; 
+    width: 80%;
+    padding: 5px 10px;
+    margin: 10px  0px;
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    
+    font-size: 10px;
+    color: #212121;
+    box-shadow: 0px 1px 1px rgb(250, 247, 247);
+    text-align: center;
+}
+
+button >a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+button >a:hover{
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+
+}
+.contact-message:valid {
+    
+    border: none;
+    outline: 2px solid rgb(14, 168, 11);
+}
+
+   
+#logo{
+max-width: 20%;
+/* aspect-ratio: 5/3; */
+height: 10vh;
+border-radius: 10%;
+float: left;
+margin: 0px 10px 0px 3px;
+}
+
+
+
+
+/* footer for all tabs */
+footer{
+    color: black;
+    display:block;
+    margin-top: 30%;
+    text-align: center;
+
+}
+
+
+
+
+@media screen and (max-width: 915px) {
+    .topnav a {
+        
+        padding: 4px 10px;
+    margin-top: 5px;
+        
+        
+      }
+   
+
+}
+  @media screen and (max-width: 1061px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    padding: 4px 5px 4px 10px;
+    margin-top: 10px;
+
+    
+
+
+    }
+  
+   #logo{
+    margin: 5px ;
+   }
+    #searchbar{
+        margin-right: 40px;
+        max-width: 40%;
+
+    }
+   
+
+    table{
+        display: block;
+        font-size: small;
+        max-width: 100%;
+        
+    }
+     
+    /* td{
+        width: 35vw;
+        font-size: 10px;
+        
+    } 
+    th{
+        width: 35vw;
+        font-size: 10px;
+
+    } */
+     #activity-js{
+        width: 40vw;
+    }
+    .activity{
+        width: 40vw;
+
+    } 
+    .container{
+        max-width: 100%;
+        min-height: 100vh;
+        margin: 0%;
+        padding: 0%;
+        background-size: cover;
+
+
+    }
+    footer{
+        margin-top: 40%;
+    }
+    
+    #time{
+        background: url(time.jpg) no-repeat scroll 7px 7px;
+        background-size: 30px;
+        background-color: #212121;
+        background-position: right;
+        background-blend-mode:difference;
+
+        }
+        #date{
+            background: url(date.jpg) no-repeat scroll 7px 7px;
+            background-size: 35px;
+            background-color: #212121;
+            background-position: right;
+            background-blend-mode:difference;
+    
+            }
+
+      
+   
+  }
+  
+  @media screen and (max-width:1061px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      
+      
+      
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      
+   
+      
+      
+    }
+  
+    
+  }
