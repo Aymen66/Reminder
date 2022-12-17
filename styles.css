@@ -526,7 +526,7 @@ button >a:hover{
     } 
     .container{
         max-width: 99%;
-        min-height: 90vh;
+        min-height: 100vh;
         margin: 0%;
         padding: 0%;
         background-size: cover;
