@@ -69,6 +69,9 @@
 }
 body{
 background-color: black;
+/* display: flex;
+    flex-flow: column; */
+    /* min-height: 90vh; */
 
 }
 .form-group{ 
@@ -77,16 +80,48 @@ background-color: black;
 }
 .container{
     border: 1px solid black;
-    max-width: 30%;
-    min-height: 98vh;
-    margin:  auto;
+    max-width: 70%;
+    min-height: 100vh;
+    margin: 0px auto;
     background-image: url("image\ 2.png");
-    padding: 5px 5px;
-    background-size: 80vw 100vh;
+    padding: 0px;
+    background-size: cover;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
     
 }
 
+main{
+    /* flex: 1; */
+    margin: 0px 5px;
+    text-align: center;
+    color: white;
+    margin-top: 0%;
+    
 
+}
+#logo{
+    max-width: 20%;
+    /* aspect-ratio: 5/3; */
+    height: 10vh;
+    border-radius: 10%;
+    float: left;
+    margin: 0px 10px 0px 3px;
+    }
+    
+    
+    
+    
+    /* footer for all tabs */
+    footer{
+        color: black;
+        display:block;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    
+    }
+    
 .form-inputs{ 
     height: 20px; 
     width: 50%; 
@@ -100,6 +135,7 @@ background-color: black;
 
 
 }
+
 .form-inputs::placeholder{
     color: whitesmoke;
 
@@ -165,13 +201,13 @@ th{
 }
 table{
     border: none;
+    display: inline-block;
     padding: 0px;
     line-height: 4vh;
-    margin: 0px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    overflow: auto;
+    /* overflow: auto; */
     max-width: 100%;
 
     
@@ -203,23 +239,15 @@ td{
 }
 
 #activity-js{
-    width: 40vw;
+    width: 30vw;
 }
 .activity{
-    width: 40vw;
+    width: 30vw;
 }
 
 
 
-main{
-    flex: 1;
-    margin: 20px 5px;
-    text-align: center;
-    color: white;
-    margin-top: 20%;
-    
 
-}
 .myInfo{
     text-align: center;
     margin: 20px 10px 10px 10px;
@@ -296,6 +324,7 @@ address a{
 article p, h1{
     color: white;
     padding: 10px;
+    
 }
 
 /* Add a hover effect if you want */
@@ -303,25 +332,31 @@ article p, h1{
 	opacity: 0.7;
 } */
 img{
-    max-width: 40%;
+    max-width: 20%;
     margin: 5% 0px;
     border-radius: 5px;
     box-shadow: 1px 2px 4px rgb(250, 247, 247);
 
 }
-
-.about{
+.home{
     max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-size: cover;
+     /* padding-bottom: 5%; */
+ 
+ }
+.about{
+    max-width: 60%;
     min-height: auto;
     background-color: rgb(45, 43, 43);
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    padding: 5%;
-    background-image: url("vc.jpg");
-    background-size:cover;
-    background-position: center;
-    background-blend-mode:overlay;    
+    padding: 15px;
+    margin-top: 5%;
+   
 }
 p{
     line-height: 3vh;
@@ -330,7 +365,7 @@ p{
 }
 h1{
     font-size: 40px;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
     text-shadow: 5px 5px 5px black;
 }
 h3{
@@ -425,26 +460,6 @@ button >a:hover{
 }
 
    
-#logo{
-max-width: 20%;
-/* aspect-ratio: 5/3; */
-height: 10vh;
-border-radius: 10%;
-float: left;
-margin: 0px 10px 0px 3px;
-}
-
-
-
-
-/* footer for all tabs */
-footer{
-    color: black;
-    display:block;
-    margin-top: 30%;
-    text-align: center;
-
-}
 
 
 
@@ -488,22 +503,25 @@ footer{
         max-width: 100%;
         
     }
+    .about{
+        max-width: 100%;
+    }
      
-    /* td{
-        width: 35vw;
+    td{
+        width: 25%;
         font-size: 10px;
         
     } 
     th{
-        width: 35vw;
+        width: 25%;
         font-size: 10px;
 
-    } */
+    }
      #activity-js{
-        width: 40vw;
+        width: 60vw;
     }
     .activity{
-        width: 40vw;
+        width: 60vw;
 
     } 
     .container{
@@ -515,10 +533,10 @@ footer{
 
 
     }
-    footer{
+    /* footer{
         margin-top: 40%;
     }
-    
+     */
     #time{
         background: url(time.jpg) no-repeat scroll 7px 7px;
         background-size: 30px;
