@@ -299,9 +299,9 @@ article p, h1{
 }
 
 /* Add a hover effect if you want */
-.fa:hover {
+/* .fa:hover {
 	opacity: 0.7;
-}
+} */
 img{
     max-width: 40%;
     margin: 5% 0px;
