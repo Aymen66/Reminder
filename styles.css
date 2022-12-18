@@ -29,12 +29,12 @@
     background-color: #ffb662;
     border-radius: 15px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #333;
     width: 95%;
     margin-right: auto;
     margin-left: auto;
-    padding :5px 10px;
+    padding :15px 10px;
     box-shadow: 0px 3px 1px black;
 
   }
@@ -50,15 +50,15 @@
 
   /* .tab:active {
     background-color: #AAA;
-    
-  }
+    padding: 5px;
+  } */
   
-  .tab-content {
+  /* .tab-content {
     margin-left: 0px;
     margin-right: 0px;
     
   }
-   */ 
+    */
 
 
 
@@ -106,7 +106,7 @@ main{
     height: 10vh;
     border-radius: 10%;
     float: left;
-    margin: 0px 10px 0px 3px;
+    margin: 10px 10px 0px 15px;
     }
     
     
@@ -157,19 +157,14 @@ button{
     font-weight: bolder;
     color: aliceblue;
     padding: 10px; 
+    font-size:15px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
     text-shadow: 1px 1px 1px black;
    
 }
-button:hover{
-    background: rgb(226, 232, 232);
-    color: #212121; 
-    border: 1px solid black;
-    
 
-}
 button:active{
     background: rgb(226, 232, 232);
     color: #212121; 
@@ -267,13 +262,14 @@ td{
   }
 
   .topnav a {
-    float: left;
-    display: block;
+    /* float: left; */
+    display: inline;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 10px;
+    padding: 10px 50px 10px 20px;
     text-decoration: none;
     font-size: 17px;
+    
     
     
   }
@@ -283,7 +279,7 @@ td{
     cursor: pointer;
 
   }
-  .topnav a:active {
+  /* .topnav a:active {
     background-color: #ddd;
     max-width: fit-content;
     color: black;
@@ -291,7 +287,7 @@ td{
     padding: 7px;
     
 
-  }
+  } */
   
   .topnav a.active {
     color: white;
@@ -300,7 +296,7 @@ td{
     
   }
   
-  .topnav .icon {
+  .topnav .nav-icon {
     display: none;
 
     
@@ -343,10 +339,14 @@ img{
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 20%;
+
+   
      /* padding-bottom: 5%; */
  
  }
+
 .about{
     max-width: 60%;
     min-height: auto;
@@ -354,8 +354,10 @@ img{
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    padding: 15px;
+    padding: 15px 45px 35px 45px;
     margin-top: 5%;
+    margin-bottom: 20%;
+
    
 }
 p{
@@ -367,6 +369,7 @@ h1{
     font-size: 40px;
     /* margin-bottom: 10%; */
     text-shadow: 5px 5px 5px black;
+    margin-bottom: 5%;
 }
 h3{
     color: whitesmoke;
@@ -385,7 +388,7 @@ h3{
 
 
 }
-.btn-form:hover{
+.btn-form:active{
     background: rgb(226, 232, 232);
     color: #212121; 
     border: 1px solid black;
@@ -403,7 +406,7 @@ h3{
     margin: 10px  0px;
     background-color: #f5f4f4;
     border-radius: 10px;
-    height: 10px; 
+    height: 15px; 
     max-width: 40%;     
     font-size: 10px;
     color: #212121;
@@ -417,9 +420,9 @@ h3{
     margin: 10px  0px;
     background-color: #f5f4f4;
     border-radius: 10px;
-    height: 4vh; 
-    max-width: 70vw;     
-    font-size: 10px;
+    min-height: 4vh; 
+    max-width: 90vw;     
+    font-size: 15px;
     color: #212121;
     box-shadow: 0px 1px 1px rgb(250, 247, 247);
     text-align: center;
@@ -477,22 +480,26 @@ button >a:hover{
 } */
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+    .topnav a.nav-icon {
       float: right;
       display: block;
-    padding: 4px 5px 4px 10px;
-    margin-top: 10px;
+    padding: 0px 5px 0px 10px;
+    margin-top: 0px;
 
     
 
 
     }
+
   
    #logo{
     margin: 5px ;
    }
     #searchbar{
         width: 50%;
+        padding: 5px;
+        min-height: 2vh;
+        font-size: 10px;
 
     }
    
@@ -505,6 +512,13 @@ button >a:hover{
     }
     .about{
         max-width: 100%;
+        margin: 30% auto;
+        padding: 15px 25px 35px 25px;
+
+    }
+    .home{
+        margin: 30% auto;
+
     }
      
     td{
@@ -531,6 +545,11 @@ button >a:hover{
         padding: 0%;
         background-size: cover;
 
+
+    }
+    .tabs{
+    padding :10px 10px;
+    margin-top: 15px;
 
     }
     /* footer{
@@ -564,10 +583,12 @@ button >a:hover{
   
   @media screen and (max-width:600px) {
     .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
+    .topnav.responsive .nav-icon {
       position: absolute;
       right: 0;
       top: 0;
+      margin-top: 20px;
+      margin-right: 10px;
 
       
       
