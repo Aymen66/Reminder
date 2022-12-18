@@ -21,6 +21,7 @@
   
   .tabs {
     /* display: flex; */
+    
     display: inline-block;
     flex-direction: column;
     justify-content: space-around;
@@ -36,7 +37,6 @@
     margin-left: auto;
     padding :15px 10px;
     box-shadow: 0px 3px 1px black;
-
   }
   
   /* .tab {
@@ -69,6 +69,8 @@
 }
 body{
 background-color: black;
+
+
 /* display: flex;
     flex-flow: column; */
     /* min-height: 90vh; */
@@ -96,7 +98,7 @@ main{
     margin: 0px 5px;
     text-align: center;
     color: white;
-    margin-top: 0%;
+    margin-bottom: 15%;
     
 
 }
@@ -340,7 +342,7 @@ img{
     margin-right: auto;
     border-radius: 10px;
     margin-top: 5%;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
 
    
      /* padding-bottom: 5%; */
@@ -356,7 +358,7 @@ img{
     border-radius: 10px;
     padding: 15px 45px 35px 45px;
     margin-top: 5%;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
 
    
 }
@@ -482,6 +484,7 @@ button >a:hover{
     .topnav a:not(:first-child) {display: none;}
     .topnav a.nav-icon {
       float: right;
+      
       display: block;
     padding: 0px 5px 0px 10px;
     margin-top: 0px;
@@ -515,12 +518,13 @@ button >a:hover{
         margin-left: auto;
         margin-right: auto;
         margin-top: 25%;
-        margin-bottom: 15%;
+        /* margin-bottom: 15%; */
         padding: 15px 25px 35px 25px;
 
     }
     .home{
-        margin: 30% auto;
+        
+        margin-top: 25%;
 
     }
      
@@ -543,11 +547,15 @@ button >a:hover{
     } 
     .container{
         max-width: 99%;
-        min-height: 99vh;
+        min-height: 100vh;
         margin: 0%;
         padding: 0%;
         background-size: cover;
 
+
+    }
+    main{
+    margin-bottom: 30%;
 
     }
     .tabs{
