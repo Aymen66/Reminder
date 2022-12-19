@@ -22,8 +22,8 @@
       
           <nav class="topnav" id="myTopnav">
             <ul class="tabs">
-              <a data-tab-target="#homeEl" class="active tab">Home</a>
-              <a data-tab-target="#aboutEl" class="tab">About </a>
+              <a data-tab-target="#homeEl"  class="active tab"><i class="fa fa-fw fa-home"></i>Home</a>
+              <a data-tab-target="#aboutEl"  class="tab">About </a>
               <a data-tab-target="#contactEl" class="tab">Contact </a>
               <a data-tab-target="#myListEl" class="tab">My List </a>
 
@@ -118,8 +118,9 @@
                       <div id="myListEl" data-tab-content>
                       <div class="about">
                           <h3 class="myInfo">My List</h3>
-                          <input  id="searchbar"  oninput="search()" type="search"
+                            <input  id="searchbar"   oninput="search()" type="search"
                           name="search" placeholder="Search ..">
+                          
                           <div  id="output">
                              <table>
                               <thead >
@@ -135,7 +136,8 @@
                               </tbody>
                              </table>
                           </div>
-                          <button class="btn-form" onclick="deletebBtn()">Delete</button><br>
+                          <button class="btn-form" onclick="deletebBtn()">Delete<i class="fa fa-trash" style="margin:5px"></i>
+                          </button><br>
                       
                       
                          </div>

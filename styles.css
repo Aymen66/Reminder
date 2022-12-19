@@ -145,12 +145,12 @@ main{
 .form-inputs::-webkit-calendar-picker-indicator{
     filter: invert(100%);
   }
-    #searchbar{
+    /* #searchbar{
         margin-top: 5px;
         max-width: 30%;
        margin-left: 10px;
         
-    }
+    } */
 button{ 
     background: rgb(194,178,128);
     box-shadow: 0px 5px 5px rgb(4, 4, 4); 
@@ -425,13 +425,13 @@ h3{
     min-height: 4vh; 
     max-width: 90vw;     
     font-size: 15px;
-    color: #212121;
+    color: #f7f4f4;
     box-shadow: 0px 1px 1px rgb(250, 247, 247);
     text-align: center;
-    
-
-
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15'  class='bi bi-search' viewBox='0 0 16 18'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 95% center;
 }
+
+
 
 textarea{
     height: 10vh; 
@@ -480,6 +480,7 @@ button >a:hover{
    
 
 } */
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.nav-icon {
@@ -517,7 +518,7 @@ button >a:hover{
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 25%;
+        margin-top: 20%;
         /* margin-bottom: 15%; */
         padding: 15px 25px 35px 25px;
 
