@@ -14,6 +14,11 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+if (!localStorage.getItem('visited')) {
+  alert('Welcome to my website!');
+  localStorage.setItem('visited', true);
+}
+
 
 let toDo = e => {
   let formData = JSON.parse(localStorage.getItem("formData")) || [];
