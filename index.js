@@ -15,13 +15,6 @@ tabs.forEach(tab => {
   })
 })
 
-if (/Android/i.test(navigator.userAgent) && !sessionStorage.getItem('visited')) {
-  alert('Welcome to my mobile website for Android!');
-  sessionStorage.setItem('visited', true);
-}
-
-
-
 let toDo = e => {
   let formData = JSON.parse(localStorage.getItem("formData")) || [];
   formData.push({

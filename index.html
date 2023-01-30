@@ -154,7 +154,40 @@
               <p>
                 <code>Copyright (c) 2022 Vocabulary Checker</code>
               </p>
-        
+              <div  id="new-feature-popup">
+                <p class="new">Check out the latest update:</p>
+                <p class="new">Dark /Light Mode feature has been added</p>
+                <button id="close-popup">Close</button>
+              </div>
+              
+              <script>
+                if (!localStorage.getItem("popupShown")) {
+                  document.getElementById("new-feature-popup").style.display = "block";
+                  localStorage.setItem("popupShown", true);
+                }
+              
+                document.getElementById("close-popup").addEventListener("click", function() {
+                  document.getElementById("new-feature-popup").style.display = "none";
+                });
+              
+                
+              </script>
+              
+              <style>
+                #new-feature-popup {
+                  display: none;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  background-color: rgb(27, 26, 26);
+                  padding: 20px;
+                  border: 1px solid black;
+                }
+                .new{
+                  color: rgb(254, 254, 255);
+                }
+              </style>
           </footer>
           
           
