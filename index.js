@@ -14,10 +14,11 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
-if (!localStorage.getItem('visited')) {
-  alert('Welcome to my website!');
+if (screen.width <= 480 && !localStorage.getItem('visited')) {
+  alert('Welcome to my mobile website!');
   localStorage.setItem('visited', true);
 }
+
 
 
 let toDo = e => {
