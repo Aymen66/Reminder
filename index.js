@@ -14,11 +14,11 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
-if (navigator.userAgent.match(/Android/i) && !sessionStorage.getItem('visited')) {
-  alert('Welcome to my mobile website!');
+
+if (/Android/i.test(navigator.userAgent) && !sessionStorage.getItem('visited')) {
+  alert('Welcome to my mobile website for Android!');
   sessionStorage.setItem('visited', true);
 }
-
 
 
 
