@@ -156,14 +156,14 @@
               </p>
               <div  id="new-feature-popup">
                 <p class="new">Check out the latest update:</p>
-                <p class="new">Dark /Light Mode feature has been added</p>
+                <p class="new">feature has been added</p>
                 <button id="close-popup">Close</button>
               </div>
               
               <script>
-                if (!sessionStorage.getItem("popupShown")) {
+                if (!localStorage.getItem("popupShown")) {
                   document.getElementById("new-feature-popup").style.display = "block";
-                  sessionStorage.setItem("popupShown", true);
+                  localStorage.setItem("popupShown", true);
                 }
               
                 document.getElementById("close-popup").addEventListener("click", function() {
