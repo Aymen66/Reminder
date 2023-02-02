@@ -161,9 +161,9 @@
               </div>
               
               <script>
-                if (!localStorage.getItem("popupShown")) {
+                if (!sessionStorage.getItem("popupShown")) {
                   document.getElementById("new-feature-popup").style.display = "block";
-                  localStorage.setItem("popupShown", true);
+                  sessionStorage.setItem("popupShown", true);
                 }
               
                 document.getElementById("close-popup").addEventListener("click", function() {
