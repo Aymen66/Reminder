@@ -10,7 +10,9 @@
 
 
 
-  
+#new-feature-popup {
+    transition: opacity 1s;
+  }
   .active[data-tab-content] {
     display: block;
     
