@@ -140,3 +140,15 @@ document.getElementById("close-popup").addEventListener("click", function() {
 
 const target = document.getElementById("new-feature-popup");
 window.onload = setInterval(() => target.style.opacity = '0', 1500)
+
+var username;
+
+username = prompt("Please enter your username:", "");
+
+if (username != null) {
+  localStorage.setItem("username", username);
+}
+
+if (localStorage.getItem("username")) {
+  document.write("Welcome, " + localStorage.getItem("username") + "!");
+}
