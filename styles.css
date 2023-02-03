@@ -12,7 +12,9 @@
 
   #new-feature-popup {
     transition: opacity 1s;
-
+    text-shadow: 0 1px #8da1ff, -1px 0 #c0cbff;
+    
+    font-family: "Henny Penny", cursive;
     display: none;
     position: absolute;
     top: 17%;
@@ -516,7 +518,7 @@ button >a:hover{
     margin: 5px ;
    }
    #new-feature-popup{
-    width: 60%;
+    width: 50%;
    }
     #searchbar{
         width: 50%;
