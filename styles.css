@@ -12,22 +12,25 @@
 
   #new-feature-popup {
     transition: opacity 1s;
-    text-shadow: 0 1px #8da1ff, -1px 0 #c0cbff;
-    
-    font-family: "Henny Penny", cursive;
+    text-shadow: 0 1px #8da1ff, -1px 0 #c0cbff, -1px 2px #8da1ff, -2px 1px #c0cbff,
+    -2px 3px #8da1ff, -3px 2px #c0cbff, -3px 2px #8da1ff, -2px 2px #c0cbff,
+    -2px 2px #8da1ff, -2px 2px #c0cbff, -2px 2px #8da1ff, -2px 2px #c0cbff,
+    -1px 1px #8da1ff, -1px 1px #c0cbff, -2px 2px #8da1ff, -2px 2px #c0cbff;
+    /* text-shadow: 0 1px #8da1ff, -1px 0 #c0cbff; */
+    font-family: 'Henny Penny', cursive;
     display: none;
     position: absolute;
     top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(12, 18, 15);
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;;
     border: 1px solid rgb(40, 33, 33);
   }
   .new{
     color: rgb(254, 254, 255);
-    font-size: large;
+    font-size: 20px;
   }
   .active[data-tab-content] {
     display: block;
@@ -518,7 +521,7 @@ button >a:hover{
     margin: 5px ;
    }
    #new-feature-popup{
-    width: 50%;
+    width: 60%;
    }
     #searchbar{
         width: 50%;
