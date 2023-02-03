@@ -139,4 +139,4 @@ document.getElementById("close-popup").addEventListener("click", function() {
 });
 
 const target = document.getElementById("new-feature-popup");
-window.onload = setInterval(() => target.style.opacity = '0', 1000)
+window.onload = setInterval(() => target.style.opacity = '0', 1500)
