@@ -35,7 +35,11 @@
         </header>
            
             <main>
-               
+               <!-- <div >
+                <button onclick="messageBtn()">Button</button>
+               </div> -->
+               <!-- <p id="showMessages"></p>  -->
+
                 
                   <div class="tab-content">
                     <div id="homeEl" data-tab-content class="active">
@@ -154,9 +158,36 @@
               <p>
                 <code>Copyright (c) 2022 Vocabulary Checker</code>
               </p>
-              <div   id="new-feature-popup">
+              <div id="close-popup">
+                <div   id="new-feature-popup">
+                  <p id="showMessages"  class="new"></p>
+                </div>
+              </div>
+              
+              
+            
+              
+              <style>
+                #new-feature-popup {
+                  display: none;
+                  position: absolute;
+                  top: 17%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  background-color: rgb(12, 18, 15);
+                  padding: 20px;
+                  border-radius: 20px;;
+                  border: 1px solid rgb(40, 33, 33);
+                }
+                .new{
+                  color: rgb(254, 254, 255);
+                  font-size: large;
+                }
+              </style>
+
+
+<!-- <div   id="new-feature-popup">
                 <p  id="close-popup" class="new">Welcome Back!</p>
-                <!-- <p class="new">feature has been added</p> -->
               </div>
               
               <script>
@@ -188,7 +219,7 @@
                 .new{
                   color: rgb(254, 254, 255);
                 }
-              </style>
+              </style> -->
           </footer>
           
           

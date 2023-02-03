@@ -118,3 +118,25 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
+
+
+
+const WelcomeMessages = ["Welcome Back!", "Glad to see you again!","Practice makes perfect! "]
+function displayWelcomeMessage() {
+  let random=  Math.floor(Math.random()* WelcomeMessages.length);
+  let randomMessage = WelcomeMessages[random]
+  document.getElementById("showMessages").innerHTML = randomMessage
+  
+}displayWelcomeMessage()
+
+
+  document.getElementById("new-feature-popup").style.display = "block";
+  
+document.getElementById("close-popup").addEventListener("click", function() {
+  document.getElementById("new-feature-popup").style.display = "none";
+});
+
+const target = document.getElementById("new-feature-popup");
+window.onload = setInterval(() => target.style.opacity = '0', 1000)
